@@ -26,7 +26,7 @@ export default function App() {
           </p>
         </div>
 
-        <div className="max-w-[1000px] max-h-[900px] w-full h-full bg-dark  border-2 border-green rounded-xl">
+        <div className="max-w-[1000px]  w-full h-full bg-black  border-2 border-green rounded-xl pb-4">
           <Dropzone />
           <Stats songData={songData}></Stats>
         </div>
