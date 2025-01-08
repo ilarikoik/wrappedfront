@@ -16,3 +16,11 @@ export async function getArtists() {
     return res2;
   } catch (error) {}
 }
+
+export async function getTest() {
+  try {
+    const res = await fetch(`http://localhost:8080/api/test`);
+    const res2 = await res.json();
+    return res2;
+  } catch (error) {}
+}

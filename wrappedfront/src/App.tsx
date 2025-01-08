@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Dropzone from "./components/Dropzone";
 import Stats from "./components/Stats";
-import getSongs, { getArtists } from "./utils/getSongData";
+import getSongs, { getArtists, getTest } from "./utils/getSongData";
 import Artists from "./components/Artists";
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
   useEffect(() => {
     const get = async () => {
       const artist = await getArtists();
-      const data = await getSongs();
+      const data = await getTest();
       if (data) {
         setSongData(data);
       }

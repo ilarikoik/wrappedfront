@@ -95,7 +95,7 @@ export default function Stats({ songData, artistData }: songList & artistList) {
           ></input>
         </div>
         <h2 className="text-white  font-bold text-xl text-center mb-5">
-          {list === 0 ? "Top" : list === 2 ? "Artists" : "Bottom"}
+          {list === 0 ? "Top " : list === 2 ? "Artists " : "Bottom "}
           <input
             type="text"
             placeholder="Amount"
