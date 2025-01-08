@@ -7,3 +7,13 @@ export interface songInterface {
 export interface songList {
   songData: songInterface[];
 }
+
+export interface artistInterface {
+  artist: string;
+  ms: number;
+  timesPlayed: number;
+}
+
+export interface artistList {
+  artistData: artistInterface[];
+}

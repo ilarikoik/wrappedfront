@@ -55,7 +55,7 @@ export default function Dropzone() {
       <div className="w-full h-36 bg-black flex flex-col justify-center items-center rounded-2xl">
         <h1 className="flex justify-center p-2"> </h1>
         <div
-          className=" bg-black border-2 border-y-gray border-x-green h-2/3 w-4/6 cursor-pointer flex justify-center items-center rounded-2xl text-green font-bold"
+          className=" bg-black shadow-lg shadow-green h-2/3 w-4/6 cursor-pointer flex justify-center items-center rounded-2xl text-green font-bold"
           {...getRootProps()}
         >
           <input {...getInputProps()} />

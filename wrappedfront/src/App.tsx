@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react";
 import Dropzone from "./components/Dropzone";
 import Stats from "./components/Stats";
-import getSongs from "./utils/getSongData";
+import getSongs, { getArtists } from "./utils/getSongData";
+import Artists from "./components/Artists";
 
 export default function App() {
   const [songData, setSongData] = useState([]);
+  const [artistData, setArtistData] = useState([]);
   useEffect(() => {
     const get = async () => {
+      const artist = await getArtists();
       const data = await getSongs();
       if (data) {
         setSongData(data);
+      }
+      if (artist) {
+        setArtistData(artist);
       }
     };
     get();
@@ -28,7 +34,7 @@ export default function App() {
 
         <div className="max-w-[1000px]  w-full h-full bg-black  border-2 border-green rounded-xl pb-4">
           <Dropzone />
-          <Stats songData={songData}></Stats>
+          <Stats songData={songData} artistData={artistData}></Stats>
         </div>
       </div>
     </>
