@@ -8,6 +8,8 @@ Tämä projekti mahdollistaa Spotify-käyttäjän henkilökohtaisen musiikkianal
 **Käytetyt teknologiat:**  
 React TypeScript, Tailwind CSS & Java SpringBoot
 
+Backend repository: [Backend](https://github.com/ilarikoik/wrappedback)
+
 ---
 
 ## Käyttöohjeet
