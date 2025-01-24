@@ -43,4 +43,4 @@ Sovellus lähettää tiedoston backendille, joka käsittelee datan ja palauttaa 
 - Kuuntelukerrat
 - Podcast- ja artistitilastot
 
----
+<img src="./src/assets/wrapped.png" alt="Drop file area" width="700" />
