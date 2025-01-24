@@ -10,6 +10,7 @@ export default function App() {
   useEffect(() => {
     const get = async () => {
       const artist = await getArtists();
+      // const data = await getSongs();
       const data = await getTest();
       if (data) {
         setSongData(data);
@@ -22,7 +23,7 @@ export default function App() {
   }, []);
   return (
     <>
-      <div className=" flex flex-col justify-center items-center min-h-screen bg-black p-1 pb-20">
+      <div className=" flex flex-col justify-center items-center min-h-screen bg-black p-1 pb-20 pt-32">
         <div className="h-fit w-fit flex flex-col justify-center items-center  mb-10 ">
           <h1 className="font-bold text-[80px] bg-gradient-to-r from-green to-gray bg-clip-text text-transparent">
             Wrapped But Better
