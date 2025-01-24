@@ -1,20 +1,46 @@
-Tämä projekti mahdollistaa Spotify-käyttäjän henkilökohtaisen musiikkianalyysin. Käyttäjä voi ladata Spotifysta saamansa kuunteluhistorian Zip-tiedostona ja pudottaa ne suoraan sovellukseen. Sovellus analysoi tiedot ja näyttää visuaalisesti tärkeimmät musiikkitilastot, kuten:
-Kappaleiden/Artistien/Podcastien kuunteluaika ja kuuntelukerrat
+# Spotify-musiikkianalyysi
 
-React TypeScript, Tailwind & Java SpringBoot
+Tämä projekti mahdollistaa Spotify-käyttäjän henkilökohtaisen musiikkianalyysin. Käyttäjä voi ladata Spotifysta saamansa kuunteluhistorian Zip-tiedostona ja pudottaa sen suoraan sovellukseen. Sovellus analysoi tiedot ja näyttää visuaalisesti tärkeimmät musiikkitilastot, kuten:
 
-1. Pyydä Spotifylta henkilökohtainen data kohdasta [Spotify Privacy](https://www.spotify.com/fi/account/privacy/)
+- Kappaleiden, artistien ja podcastien kuunteluaika
+- Kuuntelukerrat
 
-<img src="src\assets\wrappedwheredata.jpg" alt="Privacy data"   />
+**Käytetyt teknologiat:**  
+React TypeScript, Tailwind CSS & Java SpringBoot
 
-2. Saat ilmoituksen sähköpostiisi 2-5 päivän kuluessa jolloin voit käydä lataamasssa data.
+---
 
-3. Avaa ladattu "my_spotify_data" zip tiedosto ja tiputa sen sisällä oleva "Spotify Account Data" sivulla olevaan tiedoston tiputus kenttään.
+## Käyttöohjeet
 
-<img src="src\assets\dropfilewrapped.jpg" alt="Privacy data"  />
+### 1. Hanki henkilökohtainen data
 
-Sivu lähettää tiedoston backendille joka käsittelee tiedoston ja palauttaa rest rajapinnan kautta tarvittavat tiedot jotka näytetään sovelluksessa.
+Pyydä Spotifylta henkilökohtainen data kohdasta [Spotify Privacy](https://www.spotify.com/fi/account/privacy/).
 
-4. Selaa dataa valitsemallasi tavalla
+<img src="./src/assets/wrappedwheredata.jpg" alt="Privacy data request" width="700" />
 
-<img src="src\assets\wrapped.png" alt="Privacy data"  />
+---
+
+### 2. Odota sähköposti-ilmoitusta
+
+Saat ilmoituksen sähköpostiisi 2-5 päivän kuluessa, jolloin voit käydä lataamassa datan.
+
+---
+
+### 3. Lataa ja avaa tiedosto
+
+- Avaa ladattu **my_spotify_data.zip**-tiedosto.
+- Tiputa sen sisällä oleva "Spotify Account Data" -tiedosto sovelluksen tiedoston tiputuskenttään.
+
+<img src="./src/assets/dropfilewrapped.jpg" alt="Drop file area" width="700" />
+
+---
+
+### 4. Sovelluksen toiminta
+
+Sovellus lähettää tiedoston backendille, joka käsittelee datan ja palauttaa REST-rajapinnan kautta tarvittavat tiedot. Näitä tietoja käytetään sovelluksessa seuraavien tilastojen visualisointiin:
+
+- Kuunteluaika
+- Kuuntelukerrat
+- Podcast- ja artistitilastot
+
+---
