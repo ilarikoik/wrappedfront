@@ -4,4 +4,4 @@ Kappaleiden/Artistien/Podcastien kuunteluaika ja kuuntelukerrat
 React TypeScript, Tailwind & Java SpringBoot
 
 1. Pyydä Spotifylta henkilökohtainen data kohdasta [Spotify Privacy](https://www.spotify.com/fi/account/privacy/)
-   <img src="./assets/wrappedwheredata.jpg" alt="Privacy data" width="400" />
+   <img src="src\assets\wrappedwheredata.jpg" alt="Privacy data" width="400" />
